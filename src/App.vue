@@ -14,14 +14,15 @@
   </div>
 </template>
 
-<script lang>
-import Navigator from "@/components/Navigator";
+<script lang="ts">
+import Vue from "vue";
+import Navigator from "@/components/Navigator.vue";
 
-export default {
+export default Vue.extend({
   name: "App",
   components: { Navigator },
   created() {
     this.$vuetify.theme.dark = true;
   }
-};
+});
 </script>
